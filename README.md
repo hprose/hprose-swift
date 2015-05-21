@@ -84,3 +84,5 @@ for user in users {
     println(sexStrings[user.sex])
 }
 ```
+
+The full example is here: https://github.com/hprose/hprose-objc/tree/master/examples/swiftExam
