@@ -36,10 +36,6 @@ Swift.
 
 To use Hprose for Objective-C in Swift, you should to create a `Bridging-Header.h` like this:
 ```c
-//
-//  Use this file to import your target's public headers that you would like to expose to Swift.
-//
-
 #ifndef BridgingHeader_h
 #define BridgingHeader_h
 #import "Hprose.h"
@@ -73,7 +69,12 @@ println(h.hello("world"))
 println(h.hello("hprose"))
 println(h.hello("中文"))
 println(h.sum(1,b:2,c:3))
-println(h.swapKeyAndValue(["January": "Jan", "February": "Feb", "March": "Mar", "April": "Apr"]));
+println(h.swapKeyAndValue([
+    "January": "Jan",
+    "February": "Feb",
+    "March": "Mar",
+    "April": "Apr"
+]));
 var sexStrings = ["Unknown", "Male", "Female", "InterSex"];
 var users = h.getUserList();
 for user in users {
